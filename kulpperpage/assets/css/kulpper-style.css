@@ -47,7 +47,6 @@ nav.navbar.navbar-transparent {
 #features div {
 	height: 320px;
 	width: 250px;
-	border:  1px solid red;
 	margin: 20px -20px;
 	display: flex;
 	flex-direction: column;
@@ -60,14 +59,6 @@ nav.navbar.navbar-transparent {
 	width: 150px;
 }
 
-/* #features .caracteristicas {
-	padding: 10px 30px;
-	margin: 80px 40px;;
-} */
-
-
-
-
 
 /* header */
 
@@ -78,16 +69,9 @@ nav.navbar.navbar-transparent {
 	margin-top: 0px;
 	background-image: url("../img/fundo-header.jpeg");
 	background-repeat: no-repeat;
-	background-size: 100%;
-	
+	background-size: cover;
 	height: 600px;
 	width:100%;
-	
-/*
-	display: flex;
-	justify-content: flex-start;
-	flex-direction: row;
-*/
 	margin-top: -20px;
 }
 
@@ -97,10 +81,15 @@ nav.navbar.navbar-transparent {
 	font-size: 30pt;
 }
 
-#headerKulpper	h1, h3 {
-	
+#hdKulpper h1 {
+	margin-left: 10px; 
+	font-size: 48pt;
 }
 
+#hdKulpper h3 {
+	margin-left: 15px; 
+	font-size: 15pt;
+}
 /* fim header */
 
 /*footer */
@@ -110,14 +99,41 @@ footer{
 	color: #FFF;
 	width: 100%;
 	padding: 30px 0px;
+}
+
+footer .row{
 	display: flex;
-	justify-content: center;
-	flex-direction: row;
+	justify-content: space-around;
+	flex-direction:row;
 	flex-wrap: wrap;
 }
 
-footer.container.row{
-	
+.logo-footer {
+	height:110px;
+	width: 110px;
+	margin: 20px 30px;
+}
+
+.menu-footer{
+	height: 110px;
+	width: 150px;
+	margin: 20px 30px;
+}
+
+.rede-social-footer {
+	height: 110px;
+	width: 180px;
+	margin: 20px 30px;
+}
+
+.subscribe-footer {
+	height: 110px;
+	width: 300px;
+	margin: -30px 40px;
+}
+
+footer .row>div {
+	margin: 10px 0px;
 }
 footer ul{
 	list-style: none;
@@ -193,11 +209,38 @@ footer .input-group {
 	footer {
 		flex-direction: row;
 	}
+	
 }
 
+@media screen and (max-width: 720px) {
 
+	#hdKulpper h1 {
+		font-size: 30pt;
+	}
+
+	#hdKulpper h3 {
+		font-size: 13pt;
+	}
+
+	.subscribe-footer {
+		height: 110px;
+		width: 100%;
+	}
+
+	footer .input-group {
+		width: 100%;
+	}
+	
+}
 /*  para quando a tela chegar a 480*/
 @media screen and (max-width: 480px)	{
+
+	#hdKulpper h1 {
+		font-size: 25pt;
+	}
+	#hdKulpper h3 {
+		font-size: 12pt;
+	}
 	
 	#features {
 		flex-direction: column;
