@@ -13,44 +13,44 @@ body{
 }
 
 
-nav.navbar.navbar-transparent {
-	
-}
-
 .navbar-brand img{
 	height: 40px;
 	
 	margin-top: -10px;
 }
+.navbar-default .navbar-nav>li>a {
+    color: #2699FB;
+} 
+#menu-cola {
 
-#menu-nav {
-/*	margin-right: 100px;*/
 }
-
-#rede-sociais-nav {
-/*	margin-right: 100px;*/
-}
-/* features */
 
 
 #features {
 	height: auto;
 	width: 100%;
 	display: flex;
-	justify-content: center;
 	flex-direction:row; /*quando for mobile na media query lenbrar de colocar coluwn */
-	flex-wrap: nowrap;
+	justify-content:space-around;
+	flex-wrap: wrap;
 	
 	
 }
 
-#features .caracteristicas {
-	padding: 10px 30px;
-	margin: 80px 40px;;
+#features div {
+	height: 320px;
+	width: 250px;
+	margin: 20px -20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-
-
+#features div img {
+	height: 150px;
+	width: 150px;
+}
 
 
 /* header */
@@ -62,16 +62,9 @@ nav.navbar.navbar-transparent {
 	margin-top: 0px;
 	background-image: url("../img/fundo-header.jpeg");
 	background-repeat: no-repeat;
-	background-size: 100%;
-	
+	background-size: cover;
 	height: 600px;
 	width:100%;
-	
-/*
-	display: flex;
-	justify-content: flex-start;
-	flex-direction: row;
-*/
 	margin-top: -20px;
 }
 
@@ -81,10 +74,16 @@ nav.navbar.navbar-transparent {
 	font-size: 30pt;
 }
 
-#headerKulpper	h1, h3 {
-	
+#hdKulpper h1 {
+	margin-top: 150px;
+	margin-left: 10px; 
+	font-size: 48pt;
 }
 
+#hdKulpper h3 {
+	margin-left: 15px; 
+	font-size: 15pt;
+}
 /* fim header */
 
 /*footer */
@@ -94,14 +93,41 @@ footer{
 	color: #FFF;
 	width: 100%;
 	padding: 30px 0px;
+}
+
+footer .row{
 	display: flex;
-	justify-content: center;
-	flex-direction: row;
+	justify-content: space-around;
+	flex-direction:row;
 	flex-wrap: wrap;
 }
 
-footer.container.row{
-	
+.logo-footer {
+	height:110px;
+	width: 110px;
+	margin: 20px 30px;
+}
+
+.menu-footer{
+	height: 110px;
+	width: 150px;
+	margin: 20px 30px;
+}
+
+.rede-social-footer {
+	height: 110px;
+	width: 180px;
+	margin: 20px 30px;
+}
+
+.subscribe-footer {
+	height: 110px;
+	width: 300px;
+	margin: -30px 40px;
+}
+
+footer .row>div {
+	margin: 10px 0px;
 }
 footer ul{
 	list-style: none;
@@ -169,7 +195,7 @@ footer .input-group {
 @media screen and (max-width: 900px)	{
 	
 	#features {
-		flex-direction: column;
+		flex-direction: row;
 	}
 }
 
@@ -177,13 +203,67 @@ footer .input-group {
 	footer {
 		flex-direction: row;
 	}
+	
 }
 
+@media screen and (max-width: 767px){
+	#menu-cola.collapsing {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+		text-align: center;
+		align-items: center;
+	}
 
+
+	#menu-cola.collapse.in {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+		text-align: center;
+		align-items: center;
+	}
+
+	#rede-sociais-nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	
+}
+
+@media screen and (max-width: 720px) {
+
+	#hdKulpper h1 {
+		font-size: 30pt;
+	}
+
+	#hdKulpper h3 {
+		font-size: 13pt;
+	}
+
+	.subscribe-footer {
+		height: 110px;
+		width: 100%;
+	}
+
+	footer .input-group {
+		width: 100%;
+	}
+	
+}
 /*  para quando a tela chegar a 480*/
 @media screen and (max-width: 480px)	{
+
+	#hdKulpper h1 {
+		font-size: 25pt;
+	}
+	#hdKulpper h3 {
+		font-size: 12pt;
+	}
 	
 	#features {
 		flex-direction: column;
+		align-items: center;
 	}
 }
