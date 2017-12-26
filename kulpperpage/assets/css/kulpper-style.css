@@ -37,17 +37,33 @@ nav.navbar.navbar-transparent {
 	height: auto;
 	width: 100%;
 	display: flex;
-	justify-content: center;
 	flex-direction:row; /*quando for mobile na media query lenbrar de colocar coluwn */
-	flex-wrap: nowrap;
+	justify-content:space-around;
+	flex-wrap: wrap;
 	
 	
 }
 
-#features .caracteristicas {
+#features div {
+	height: 320px;
+	width: 250px;
+	border:  1px solid red;
+	margin: 20px -20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#features div img {
+	height: 150px;
+	width: 150px;
+}
+
+/* #features .caracteristicas {
 	padding: 10px 30px;
 	margin: 80px 40px;;
-}
+} */
 
 
 
@@ -169,7 +185,7 @@ footer .input-group {
 @media screen and (max-width: 900px)	{
 	
 	#features {
-		flex-direction: column;
+		flex-direction: row;
 	}
 }
 
@@ -185,5 +201,6 @@ footer .input-group {
 	
 	#features {
 		flex-direction: column;
+		align-items: center;
 	}
 }
