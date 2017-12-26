@@ -1,0 +1,189 @@
+/**
+Cores:
+
+Azul de todo o siter: #2699FB
+Fotes Escuras: #141F21
+**/
+body{
+	padding: 0px;
+	margin: 0px;
+	background-image: url("../img/background.png");
+    background-size: 1px 0px 1px;
+	font-family: 'Roboto', serif;
+}
+
+
+nav.navbar.navbar-transparent {
+	
+}
+
+.navbar-brand img{
+	height: 40px;
+	
+	margin-top: -10px;
+}
+
+#menu-nav {
+/*	margin-right: 100px;*/
+}
+
+#rede-sociais-nav {
+/*	margin-right: 100px;*/
+}
+/* features */
+
+
+#features {
+	height: auto;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction:row; /*quando for mobile na media query lenbrar de colocar coluwn */
+	flex-wrap: nowrap;
+	
+	
+}
+
+#features .caracteristicas {
+	padding: 10px 30px;
+	margin: 80px 40px;;
+}
+
+
+
+
+
+/* header */
+
+
+#headerKulpper{
+	font-family: 'Roboto', serif;
+	color: #FFF;
+	margin-top: 0px;
+	background-image: url("../img/fundo-header.jpeg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	
+	height: 600px;
+	width:100%;
+	
+/*
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: row;
+*/
+	margin-top: -20px;
+}
+
+#headerKulpper h1 {
+	margin-top: 100px;
+	margin-bottom: 15px;
+	font-size: 30pt;
+}
+
+#headerKulpper	h1, h3 {
+	
+}
+
+/* fim header */
+
+/*footer */
+
+footer{
+	background-color: #2699FB;
+	color: #FFF;
+	width: 100%;
+	padding: 30px 0px;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+footer.container.row{
+	
+}
+footer ul{
+	list-style: none;
+}
+
+footer ul li a {
+	text-decoration:none;
+	color: #FFF;
+}
+
+footer ul li a i {
+	width: 5px;
+	margin-right: 20px;
+}
+
+.button-back-to-top-footer{
+	margin-left: 100px;
+	background-color: #FFF;
+	color: #2699FB;
+	position: static;
+	width: 100px;
+
+}
+
+footer .form-control{
+	background-color: #2699FB;
+	color: #FFF;
+	border: 1px solid #FFF;
+	width: 300px;
+}
+
+footer .input-group {
+	width: 260px;
+}
+
+
+.form-control::-webkit-input-placeholder { /* WebKit browsers */
+  color: #fff;
+}
+
+.form-control:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #fff;
+}
+
+.form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #fff;
+}
+
+.form-control:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #fff;
+}
+
+.btn-default {
+    color: #2699FB;
+    background-color: #fff;
+    border-color: #FFF;
+    width: 60px;
+}
+
+/* fim footer */
+
+/** medias queries **/
+
+/* para quando a tela chegar em 900px */
+@media screen and (max-width: 900px)	{
+	
+	#features {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 880px)	{
+	footer {
+		flex-direction: row;
+	}
+}
+
+
+/*  para quando a tela chegar a 480*/
+@media screen and (max-width: 480px)	{
+	
+	#features {
+		flex-direction: column;
+	}
+}

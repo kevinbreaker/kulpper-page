@@ -1,0 +1,225 @@
+.container
+{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    border: 1px solid black;
+
+    color: white;
+}
+
+.container div
+{
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.flex-item1
+{
+    flex-basis: 100%;
+    height: 100px;
+    background-color: forestgreen;
+}
+
+/* ================ PARTE de 2 Quadrados Valor Padrão 50% =========================*/
+
+.flex-item2
+{
+    flex-basis: 50%;
+    height: 100px;
+    background-color: black;
+}
+
+.flex-item3
+{
+   
+    flex-basis: 50%;
+    height: 100px;
+    background-color: aqua;
+}
+
+/* ================ PARTE de 3 Quadrados Valor Padrão 33.3% =========================*/
+
+.flex-item4{
+    flex-basis: 33.3%;
+    height: 100px;
+    background-color: red;
+}
+
+.flex-item5{
+    flex-basis: 33.3%;
+    height: 100px;
+    background-color: red;
+}
+
+.flex-item6{
+    flex-basis: 33.3%;
+    height: 100px;
+    background-color: red;
+}
+
+
+/* ================ PARTE de 4 Quadrados Valor Padrão 25% =========================*/
+
+
+.flex-item7{
+    flex-basis: 25%;
+    height: 100px;
+    background-color: blue;
+
+}
+
+.flex-item8{
+    flex-basis: 25%;
+    height: 100px;
+    background-color: blue;
+
+}
+
+.flex-item9{
+    flex-basis: 25%;
+    height: 100px;
+    background-color: blue;
+
+}
+
+.flex-item10{
+    flex-basis: 25%;
+    height: 100px;
+    background-color: blue;
+
+}
+
+
+/* ================ PARTE de 6 Quadrados Valor Padrão 16.6% =========================*/
+
+
+.flex-item11{
+    flex-basis: 16.6%;
+    height: 100px;
+    background-color: saddlebrown;
+
+}
+
+.flex-item12{
+    flex-basis: 16.6%;
+    height: 100px;
+    background-color: saddlebrown;
+
+}
+
+.flex-item13{
+    flex-basis: 16.6%;
+    height: 100px;
+    background-color: saddlebrown;
+
+}
+
+.flex-item14{
+    flex-basis: 16.6%;
+    height: 100px;
+    background-color: saddlebrown;
+
+}
+
+.flex-item15{
+    flex-basis: 16.6%;
+    height: 100px;
+    background-color: saddlebrown;
+
+}
+
+.flex-item16{
+    flex-basis: 16.6%;
+    height: 100px;
+    background-color: saddlebrown;
+
+}
+
+/* ================ PARTE de 6 Quadrados Valor Padrão 16.6% =========================*/
+
+.flex-item17{
+    flex-basis: 8.3%;
+    height: 100px;
+    background-color: tomato;
+
+}
+
+.flex-item18{
+    flex-basis: 8.3%;
+    height: 100px;
+    background-color: tomato;
+
+}
+
+.flex-item19{
+    flex-basis: 8.3%;
+    height: 100px;
+    background-color: tomato;
+
+}
+
+.flex-item20{
+    flex-basis: 8.3%;
+    height: 100px;
+    background-color: tomato;
+
+}
+
+.flex-item21{
+    flex-basis: 8.3%;
+    height: 100px;
+    background-color: tomato;
+
+}
+
+.flex-item22{
+    flex-basis: 8.3%;
+    height: 100px;
+    background-color: tomato;
+}
+
+.flex-item23{
+    flex-basis: 8.3%;
+    height: 100px;
+    background-color: tomato;
+
+}
+
+.flex-item24{
+    flex-basis: 8.3%;
+    height: 100px;
+    background-color: tomato;
+}
+
+.flex-item25{
+    flex-basis: 8.3%;
+    height: 100px;
+    background-color: tomato;
+}
+
+.flex-item26{
+    flex-basis: 8.3%;
+    height: 100px;
+    background-color: tomato;
+
+}
+
+.flex-item27{
+    flex-basis: 8.3%;
+    height: 100px;
+    background-color: tomato;
+}
+
+.flex-item28{
+    flex-basis: 8.3%;
+    height: 100px;
+    background-color: tomato;
+}
+
+.flex-item29{
+    flex-basis: 8.3%;
+    height: 100px;
+    background-color: tomato;
+
+}
