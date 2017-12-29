@@ -157,6 +157,17 @@ footer ul li a i {
 
 }
 
+.scrollToTop{   
+    position:fixed;
+    bottom:70px; 
+    right:40px;
+	display:none;
+	background-color: #2699FB;
+	color: white;
+	border-radius: 100%;
+	padding: 15px;
+}
+
 footer .form-control{
 	background-color: #2699FB;
 	color: #FFF;

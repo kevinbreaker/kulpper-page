@@ -158,12 +158,43 @@
 				
 			</div>
 		</div>
-		
+		<a href="#" class="scrollToTop">
+			<span class="glyphicon glyphicon-menu-up"></span>
+		</a>
 		
 	</footer>
 	
 	<!-- Scripts JS -->
 	<script src="assets/libs/jquery321/jquery-3.2.1.min.js"></script>
 	<script src="assets/libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function(){
+
+			//Verifica se a Janela está no topo
+			$(window).scroll(function(){
+				if ($(this).scrollTop() > 100) {
+					if($(this).scrollTop() >= 400) {  
+						$('.scrollToTop').fadeIn();
+						// $('.scrollToTop').fadeOut();
+						// $('.button-back-to-top-footer').fadeIn();
+					}
+					else{
+						$('.scrollToTop').fadeIn();
+					}
+				}
+				else {  
+					//$('.button-back-to-top-footer').fadeOut();
+					$('.scrollToTop').fadeOut();
+				}
+			});
+
+			//Ao clicar redireciona para o topo
+			$('.scrollToTop').click(function(){
+				$('html, body').animate({scrollTop : 0},800);
+				return false;
+			});
+
+		});
+	</script>
 </body>
 </html>
